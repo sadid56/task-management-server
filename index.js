@@ -66,7 +66,8 @@ async function run() {
       title: task.title,
       description: task.description,
       deadlines: task.deadlines,
-      priority: task.priority
+      priority: task.priority,
+      status: task.status
     }
   }
   const result = await taskCollection.updateOne(query, updateTask)
